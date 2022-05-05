@@ -55,8 +55,10 @@ class ScanListFragment : Fragment() {
     }
 
     // Launch
-    fun onButtonClick() {
-        barcodeLauncher.launch(ScanOptions())
+    private fun onButtonClick() {
+        barcodeLauncher.launch(ScanOptions().apply {
+            setDesiredBarcodeFormats(ScanOptions.QR_CODE)
+        })
     }
 
 }
