@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 import edu.mahmoud.qrworkground.generate.GenerateActivity
+import edu.mahmoud.qrworkground.scan.ScanActivity
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -14,7 +15,10 @@ class MainActivity : AppCompatActivity() {
         findViewById<Button>(R.id.btnGnerate).setOnClickListener {
             startActivity(Intent(this, GenerateActivity::class.java))
         }
-        
+
+        findViewById<Button>(R.id.btnScan).setOnClickListener {
+            startActivity(Intent(this, ScanActivity::class.java))
+        }
 
     }
 }
