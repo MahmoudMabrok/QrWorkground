@@ -11,6 +11,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.QRWorkground">
         <activity
+            android:name=".scan.ScanActivity"
+            android:exported="false" />
+        <activity
             android:name=".generate.GenerateActivity"
             android:exported="false" />
         <activity
